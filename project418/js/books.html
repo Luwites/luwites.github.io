@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="cityLib.css">
+    <script defer src="cityLib.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark"style="background-color: #00b8ea;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">The City Library</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">| About Us |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="virtualTour.html">| Virtual Tour |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="books.html">| Books |</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h3 style="color: #39b4da">Books in our Collection  <a class="btn btn-outline-success float-end" href="addingbook.html">Add New Book</a></h3>      
+
+      <hr>
+      <table class="table table-striped">
+<thead><tr><th>#</th><th>ISBN</th><th>Book Title</th><th>Overdue Fee</th><th>Publisher</th><th>Date Published</th><th></th><th></th></tr></thead>
+<tbody id = "books"></tbody>
+      </table>
+
+<footer class="footer">
+    <div class="container">
+    </div>
+  </footer>
+</body>
+</html>
