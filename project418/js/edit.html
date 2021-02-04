@@ -4,9 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library Book Addition</title>
+    <title>Libabry Book Editing</title>
     <link rel="stylesheet" href="cityLib.css" />
-        
+        <script src="edit.js"></script>
 
   </head>
   <body>
@@ -44,10 +44,11 @@
         </div>
       </div>
     </nav>
-    <h3 style="color: #904e92">New Book Form</h3>
+    <div class="marginCenter">
 
-    <strong>Note:</strong> Please fill all the fields.
-    <form class="row g-3 needs-validation" novalidate>
+    <h3 style="color: #904e92">Editing Form</h3>
+    <form class="row g-3 " id="addForm" method="POST">
+      <input id="bookId" type="hidden" name="bookId" value="" />
       <div class="col-12">
         <label for="inputTitle" class="form-label">Book Title</label>
         <input type="text" class="form-control" id="inputTitle" />
@@ -64,8 +65,8 @@
           type="text"
           class="form-control"
           id="inputOverdue"
+          placeholder="0.00"
         />
-
       </div>
 
       <div class="col-md-6">
@@ -74,23 +75,22 @@
       </div>
       <div class="col-md-6">
         <label for="inputPubDate" class="form-label">Date Published</label>
-        <input type="date" class="form-control" id="inputPubDate" />
+        <input type="date" class="form-control" id="inputPubDate"/>
       </div>
 
       <div class="col-12">
         <div class="float-end">
-          <button type="submit" class="btn btn-outline-danger">Reset</button>
-          <button type="button" class="btn btn-outline-success" onclick="bookadder()">
-            Save Book
+          <button type="reset" class="btn btn-outline-danger">Reset</button>
+          <button type="submit" class="btn btn-outline-success">
+            Save Changes
           </button>
         </div>
       </div>
     </form>
-
+</div>
     <footer class="footer">
       <div class="container">
       </div>
     </footer>
-    <script defer src="addingbook.js"></script>
   </body>
 </html>
